@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 def load_file(file, extension='.txt'):
     """Lê os dados de um arquivo separados por quebra de linha."""
     try:
-        with open(f'{file}{extension}', 'r') as f:
+        with open(f'files/{file}{extension}', 'r') as f:
             data = [int(linha.strip()) for linha in f if linha.strip().isdigit()]
     except:
         print(f'Arquivo "{file}{extension}" não encontrado.')
